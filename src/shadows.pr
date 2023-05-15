@@ -5,7 +5,7 @@ Tokens are named by their group path and then name,
 and their value rendered using `shadow-color` blueprint
 
 *}
-:root {
+body[data-theme="base"] {
 {[ let brand = ds.currentBrand() /]}
 {[ for token in ds.tokensByType("Shadow", brand.id) ]}
 {[ if (!token.isVirtual) ]}
